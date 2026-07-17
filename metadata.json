@@ -1,0 +1,6 @@
+{
+  "name": "BELLINI odontología",
+  "description": "Estudio odontológico de alta categoría, que combina estética dental avanzada, tecnología de punta y excelencia médica en un entorno minimalista y sofisticado. Agenda tu turno online o explora nuestros casos de éxito.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

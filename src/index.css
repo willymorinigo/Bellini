@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-gold-cream: #F9F6F0;
+  --color-charcoal-deep: #111111;
+  --color-silver-base: #CCCCCC;
+  --color-silver-light: #F2F2F2;
+  --color-silver-shimmer: #E5E7EB;
+}
+
+/* Custom Base Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #0c0c0c;
+  color: #eeeeee;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0c0c0c;
+  color: #e5e5e5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Elegant selection colors */
+::selection {
+  background-color: rgba(204, 204, 204, 0.25);
+  color: #ffffff;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
+}
+
+/* Custom ambient silver glows */
+.silver-glow {
+  box-shadow: 0 0 40px -10px rgba(229, 231, 235, 0.12);
+}
+
+.silver-border-glow {
+  transition: all 0.4s ease;
+}
+
+.silver-border-glow:focus-within {
+  border-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px -3px rgba(229, 231, 235, 0.2);
+}
+
+/* Silver shimmer gradient effect */
+.silver-shimmer {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.15) 40%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.15) 60%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 6s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+/* Sophisticated Dark Palette & Theme helpers */
+.silver-border {
+  border: 1px solid transparent;
+  background: linear-gradient(#0a0a0a, #0a0a0a) padding-box, 
+              linear-gradient(45deg, #707070, #E0E0E0, #707070) border-box;
+}
+
+.silver-text {
+  background: linear-gradient(135deg, #A0A0A0 0%, #FFFFFF 50%, #A0A0A0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.didot-logo {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+
+.gotham-sub {
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  letter-spacing: 0.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
