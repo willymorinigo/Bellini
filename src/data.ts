@@ -1,9 +1,17 @@
 import { SpecialtyService, Specialist, CaseComparison } from './types';
 
+import belliniLobby from './assets/images/bellini_lobby_1780402454904.png';
+import belliniClinic from './assets/images/bellini_clinic_1780402470911.png';
+import belliniDetail from './assets/images/bellini_detail_1780402487783.png';
+import smile1Before from './assets/images/smile1_before_1780402554144.png';
+import smile1After from './assets/images/smile1_after_1780402538305.png';
+import implantBefore from './assets/images/implant_before_1780402583665.png';
+import implantAfter from './assets/images/implant_after_1780402569179.png';
+
 export const HERO_SLIDER_IMAGES = [
   {
     id: 'lobby',
-    url: '/src/assets/images/bellini_lobby_1780402454904.png',
+    url: belliniLobby,
     title: 'BELLINI',
     subtitle: 'ODONTOLOGÍA',
     description: 'Estudio de salud dental de alta categoría. Espacios diseñados para el bienestar absoluto, combinando el rigor clínico más estricto con el lujo de los detalles.',
@@ -11,7 +19,7 @@ export const HERO_SLIDER_IMAGES = [
   },
   {
     id: 'clinic',
-    url: '/src/assets/images/bellini_clinic_1780402470911.png',
+    url: belliniClinic,
     title: 'TECNOLOGÍA DE PUNTA',
     subtitle: 'DIAGNÓSTICO DIGITAL',
     description: 'Equipamiento de última generación y escaneo intraoral 3D para la planificación micrométrica de cirugías guiadas y estética reconstructiva.',
@@ -19,7 +27,7 @@ export const HERO_SLIDER_IMAGES = [
   },
   {
     id: 'detail',
-    url: '/src/assets/images/bellini_detail_1780402487783.png',
+    url: belliniDetail,
     title: 'EL VALOR DEL DETALLE',
     subtitle: 'DISEÑO Y PRECISIÓN',
     description: 'Instrumental quirúrgico y materiales de estándar global. Cada tratamiento se concibe como una obra artesanal adaptada a la anatomía de tu boca.',
@@ -117,8 +125,8 @@ export const CLINIC_CASES: CaseComparison[] = [
     title: 'Rejuvenecimiento Dental con Carillas de Porcelana',
     category: 'Diseño de Sonrisa',
     description: 'Armonización total de sector anterior mediante 8 carillas feldespáticas ultrafinas para resolver anomalías de esmalte, asimetrías de los bordes y lograr un blanco bio-natural integrado.',
-    beforeUrl: '/src/assets/images/smile1_before_1780402554144.png',
-    afterUrl: '/src/assets/images/smile1_after_1780402538305.png',
+    beforeUrl: smile1Before,
+    afterUrl: smile1After,
     stats: [
       { label: 'Visitas', value: '3 Consultas' },
       { label: 'Brillo Vita', value: '+4 Niveles' },
@@ -130,8 +138,8 @@ export const CLINIC_CASES: CaseComparison[] = [
     title: 'Rehabilitación Superior con Implante Estético de Zirconio',
     category: 'Implantología Avanzada',
     description: 'Sustitución de incisivo central fracturado sin dañar los dientes vecinos. Se colocó implante cerámico libre de metal con cirugía mínimamente invasiva guiada por computadora.',
-    beforeUrl: '/src/assets/images/implant_before_1780402583665.png',
-    afterUrl: '/src/assets/images/implant_after_1780402569179.png',
+    beforeUrl: implantBefore,
+    afterUrl: implantAfter,
     stats: [
       { label: 'Intervención', value: '45 minutos' },
       { label: 'Biocompatibilidad', value: 'Alergias 0%' },
